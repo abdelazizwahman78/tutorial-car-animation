@@ -1,0 +1,167 @@
+body{
+    background-image: url(Car_Animation_Img/sky.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+.road{
+    background-image: url(Car_Animation_Img/road.jpg);    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    width: 500%;
+    z-index: 1;
+    animation: road 5s linear infinite;
+    background-repeat: repeat-x;
+}
+@keyframes road{
+    100%{
+        transform: translateX(-3400px)
+    }
+}
+.city{
+    background-image: url(Car_Animation_Img/city.png);
+    
+    position: absolute;
+    bottom: 200px;
+    left: 0;
+    right: 0;
+    height: 250px;
+    width: 500%;
+    z-index: 1;
+    animation: city 25s linear infinite;
+    background-repeat: repeat-x;
+}
+@keyframes city{
+    100%{
+        transform: translateX(-1400px)
+    }
+}
+.car{
+    position: absolute;
+    left: 39%;
+    bottom: 100px;
+    z-index: 2;
+}
+.car img{
+    width: 370px;
+    animation: car 1s linear infinite;
+}
+@keyframes car{
+    100%{
+        transform: translateY(-2px);
+    }
+    50%{
+        transform: translateY(1px);
+    }
+    0%{
+        transform: translateY(-2px);
+    }
+}
+.wheel{
+    position: absolute;
+    left: 41%;
+    bottom: 105px;
+    z-index: 2;
+    width: 295px;
+}
+.wheel img{
+    animation: wheel .6s linear infinite;
+}
+@keyframes wheel{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.front{
+    width: 70px;
+    float: right;
+}
+.back{
+    width: 70px;
+    float: left;
+}
+.shadow{
+    position: absolute;
+    left: 36.5%;
+    bottom: 87px;
+    z-index: 1;
+    opacity: .5;
+}
+.shadow img{
+    width: 450px;
+}
+.race{
+    position: absolute;
+    left: 8%;
+    bottom: 60px;
+    z-index: 3;
+}
+.race img{
+    width: 230px;
+    animation: race .8s linear infinite;
+}
+@keyframes race{
+    100%{
+        transform: translateY(1px);
+    }
+    50%{
+        transform: translateY(-1px);
+    }
+    0%{
+        transform: translateY(1px);
+    }
+}
+.wheel-race{
+    position: absolute;
+    left: 13%;
+    bottom: 133px;
+    z-index: 2;
+    width: 130px;
+}
+.wheel-race img{
+    animation: wheel-race .6s linear infinite;
+}
+@keyframes wheel-race{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.front-race{
+    width: 53px;
+    float: right;
+    
+}
+.back-race{
+    width: 53px;
+    float: left;
+}
+.shadow-race{
+    position: absolute;
+    left: 12.5%;
+    bottom: 130px;
+    z-index: 1;
+    opacity: .4;
+}
+.shadow-race img{
+    width: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
